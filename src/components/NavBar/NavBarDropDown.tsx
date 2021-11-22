@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import classes from "./NavBarDropDown.module.css"
 
 interface Props {
   children?: [{text: string, url: string}]
@@ -7,7 +8,7 @@ interface Props {
 const NavBarDropDown: React.FC<Props> = props => {
 
   return (
-    <ul>
+    <ul className={classes.dropdown__ul}>
       {props.children!.map((item) => (
         <li><Link to={item.url}>{item.text}</Link></li>
       ))}

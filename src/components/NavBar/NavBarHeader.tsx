@@ -1,3 +1,4 @@
+//Import React features
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +28,6 @@ const NavBarHeader: React.FC<Props> = props => {
         setDropDownVisibility(false);
     }
     
-
     //Page Render:
     return (
         <div className = {classes.header}
