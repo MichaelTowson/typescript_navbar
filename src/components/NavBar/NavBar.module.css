@@ -1,0 +1,20 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    height: 6rem;
+}
+
+.navBar__logo {
+    padding: 1rem 2rem;
+    height: auto;
+}
+
+.navBar__menu {
+    display: flex;
+    flex-direction: row;
+    width: fill;
+    align-items: center;
+    justify-content: right;
+}
