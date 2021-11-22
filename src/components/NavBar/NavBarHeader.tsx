@@ -12,7 +12,7 @@ import NavBarDropDown from './NavBarDropDown'
 interface Props {
     text: string
     url: string
-    children?: [{text: string}, {url: string}]
+    children?: {text: string, url:string}[]
 }
 
 

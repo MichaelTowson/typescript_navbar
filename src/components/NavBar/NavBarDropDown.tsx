@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import classes from "./NavBarDropDown.module.css"
 
 interface Props {
-  children?: [{text: string, url: string}]
+  children?: {text: string, url:string}[]
 }
 
 const NavBarDropDown: React.FC<Props> = props => {

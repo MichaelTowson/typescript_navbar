@@ -1,0 +1,7 @@
+@import url('../globalStyles.css');
+
+.view__container {
+  padding-top: 6rem;
+  min-height: 100vh;
+  z-index: 0;
+}
