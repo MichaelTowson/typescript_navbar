@@ -1,10 +1,8 @@
-import NavBar from '../components/NavBar/NavBar'
-
-function HomePage() {
+const HomePage: React.FC = () => {
 
     return (
     <div>
-        <p>Homepage block content goes here</p>
+        <h1>Homepage content goes here</h1>
     </div>
     )
 

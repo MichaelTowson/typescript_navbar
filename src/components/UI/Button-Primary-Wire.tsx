@@ -1,4 +1,4 @@
-import classes from './Button.module.css'
+import classes from './Button-Primary-Wire.module.css'
 
 interface Props {
     text: string

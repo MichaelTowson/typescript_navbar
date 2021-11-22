@@ -3,8 +3,8 @@ import classes from './NavBar.module.css'
 
 //Import components
 import NavBarHeader from './NavBarHeader'
-import Logo from '../UI/Logo'
-import Button from '../UI/Button'
+import Logo from './NavBarLogo'
+import ScheduleButton from '../UI/Button-Primary-Wire'
 
 const NavBar: React.FC = () => {
 
@@ -16,19 +16,19 @@ const NavBar: React.FC = () => {
             </div>
             <div className = {classes.navBar__menu}>
                 <NavBarHeader text="Who we serve" url="/" children={[
-                    {text: "Credit Union", url: "/"},
+                    {text: "Credit Unions & Banks", url: "/"},
                     {text: "Fraternal Businesses", url: "/"}
                 ]}/>
                 <NavBarHeader text="Platform" url="/" children={[
                     {text: "Overview", url: "/"},
                     {text: "Architecture", url: "/"}
                 ]}/>
-                <NavBarHeader text="Why Contribute" url="/" children={[
+                <NavBarHeader text="Why Co.tribute" url="/" children={[
                     {text: "Resources", url: "/"},
                     {text: "About", url: "/"}
                 ]}/>
                 <NavBarHeader text="Sign In" url="/" children={[]}/>
-                <Button text="Demo"/>
+                <ScheduleButton text="Schedule Demo"/>
             </div>
         </nav>
     )

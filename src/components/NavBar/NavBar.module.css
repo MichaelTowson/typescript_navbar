@@ -1,4 +1,7 @@
+@import url('../../globalStyles.css');
+
 .navBar__container {
+    text-transform: capitalize;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -9,8 +12,7 @@
 }
 
 .navBar__logo {
-    padding: 1rem 2rem;
-    height: auto;
+    height: 100%;
 }
 
 .navBar__menu {
