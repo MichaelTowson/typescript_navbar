@@ -33,8 +33,16 @@ const NavBarHeader: React.FC<Props> = props => {
         <div className = {classes.header}
             onMouseEnter={mouseOver}
             onMouseLeave={mouseLeave}
-        >
-            <Link to={props.url}><h4>{props.text}</h4></Link>
+        >   
+            {/* MENU TEXT - display caret icon if header has child links */}
+            <Link to={props.url}>
+                <div className = {classes.header__text}>
+                    <h4>{props.text}</h4>
+                    {props.children![0] ? <i className="fas fa-caret-down"/> : ""}
+                </div>
+            </Link>
+
+            {/* DROPDOWN MENU - displayed if visibility has been flagged and has children */}
             {dropDownVisibility && props.children![0] ? <NavBarDropDown children={props.children} /> : ""}
         </div>
     )
