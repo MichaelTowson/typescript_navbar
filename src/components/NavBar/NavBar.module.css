@@ -5,6 +5,7 @@
     background-color: white;
     height: 6rem;
     position: fixed;
+    padding: 0rem 6rem;
 }
 
 .navBar__logo {

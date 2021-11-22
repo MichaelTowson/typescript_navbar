@@ -20,6 +20,10 @@ body p {
 }
 
 /* UTILITY CLASSES */
-.u-primary-color-accent:hover {
+.u-margin-left-s{
+  margin-left: 0.5rem;
+}
+
+.u-primary-color-accent {
   color: var(--primary);
 }
