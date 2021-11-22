@@ -1,12 +1,26 @@
+@import url('../../globalStyles.css');
+
 a {
   text-decoration: none;
   color: black;
 }
 
+a:hover{
+  color: var(--primary)
+}
+
 .dropdown__ul {
-  padding: .25rem;
+  position: absolute;
+  background-color: white;
+  z-index: 2;
+  padding: 1rem;
   margin-top: 2rem;
-  border: solid black 1px;
+  border: solid var(--primary) 1px;
+  border-radius: 2px;
   text-decoration: none;
   list-style: none;
+}
+
+.dropdown__li:not(:first-child) {
+  margin-top: 1rem; 
 }

@@ -10,7 +10,9 @@ const NavBarDropDown: React.FC<Props> = props => {
   return (
     <ul className={classes.dropdown__ul}>
       {props.children!.map((item) => (
-        <li><Link to={item.url}>{item.text}</Link></li>
+        <li>
+          <Link to={item.url}>{item.text}</Link>
+        </li>
       ))}
     </ul>
   )

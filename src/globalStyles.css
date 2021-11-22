@@ -1,4 +1,9 @@
-/* GLOBAL CLASSES */
+/* VARIABLES */
+:root {
+  --primary: #52c1b2;
+}
+
+/* GLOBAL STYLE */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,3 +20,6 @@ body p {
 }
 
 /* UTILITY CLASSES */
+.u-primary-color-accent:hover {
+  color: var(--primary);
+}
