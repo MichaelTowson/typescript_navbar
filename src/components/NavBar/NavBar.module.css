@@ -1,9 +1,10 @@
-.navBar {
+.navBar__container {
     display: flex;
     flex-direction: row;
     width: 100%;
     background-color: white;
     height: 6rem;
+    position: fixed;
 }
 
 .navBar__logo {

@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
 
 //Render
     return (
-        <nav className = {classes.navBar}>
+        <nav className = {classes.navBar__container}>
             <div className = {classes.navBar__logo}>
                 <Logo />
             </div>
