@@ -1,0 +1,30 @@
+@import url('../../globalStyles.css');
+
+.form_form {
+  text-align: left;
+  padding: 2rem 6rem;
+}
+
+.form_label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.4rem;
+}
+
+.form_input {
+  display: block;
+  padding: 0.7rem;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: solid silver 1px;
+  border-radius: 6px;
+}
+
+.form_input:focus {
+  outline: none;
+  border-color: rgba(var(--primary_rgba))
+}

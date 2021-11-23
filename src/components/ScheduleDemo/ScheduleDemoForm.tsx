@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import classes from './ScheduleDemoForm.module.css'
 
 interface Props {
   scheduleDemoVisibility: boolean
@@ -35,22 +36,22 @@ const ScheduleDemoForm: React.FC<Props> = (props) => {
 
   
   return(
-    <form onSubmit={submitForm}>
+    <form className={classes.form_form} onSubmit={submitForm}>
       {/* First Name */}
-      <label>First Name</label>
-      <input type = "text" onChange = {(e) => setFirstName(e.target.value)}/>
+      <label className ={classes.form_label}>First Name</label>
+      <input className ={classes.form_input} type = "text" onChange = {(e) => setFirstName(e.target.value)}/>
       {/* Last Name */}
-      <label>Last Name</label>
-      <input type = "text" onChange = {(e) => setLastName(e.target.value)}/>
+      <label className ={classes.form_label}>Last Name</label>
+      <input className ={classes.form_input} type = "text" onChange = {(e) => setLastName(e.target.value)}/>
       {/* Email */}
-      <label>Email</label>
-      <input type = "email" onChange = {(e) => setEmail(e.target.value)}/>
+      <label className = {classes.form_label}>Email</label>
+      <input className ={classes.form_input} type = "email" onChange = {(e) => setEmail(e.target.value)}/>
       {/* Company */}
-      <label>Company</label>
-      <input type = "text" onChange = {(e) => setCompany(e.target.value)}/>
+      <label className = {classes.form_label}>Company</label>
+      <input className ={classes.form_input} type = "text" onChange = {(e) => setCompany(e.target.value)}/>
       {/* Phone Number */}
-      <label>Phone Number</label>
-      <input type = "text" onChange = {(e) => setPhone(e.target.value)}/>
+      <label className = {classes.form_label}>Phone Number</label>
+      <input className ={classes.form_input} type = "text" onChange = {(e) => setPhone(e.target.value)}/>
       <button>Request Demo</button>
     </form>
   )

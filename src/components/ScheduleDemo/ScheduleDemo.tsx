@@ -39,6 +39,7 @@ const toggleVisible: () => void = props.toggleVisible
             {/* Form Heading */}
             <h3 className={classes.popUp__window_header}>Let's schedule a demo.</h3> 
             <h4 className={classes.popUp__window_subtext}>Fill out the details below and we'll schedule a demo for you with the right person.</h4>
+            <p style={{color: "red"}}>Developer Note: Validations still need to be added.</p>
             
             {/* Form Component */}
             <ScheduleDemoForm 
