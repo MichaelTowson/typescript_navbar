@@ -6,13 +6,16 @@ import './globalStyles.css';
 import HomePage from './views/HomePage'
 
 //Import components
+import ScheduleDemo from './components/ScheduleDemo/ScheduleDemo';
 import NavBar from './components/NavBar/NavBar'
 
 function App() {
   return (
     <div>
-      {/* Render NavBar at Top of Screen */}
       <Router>
+        {/* Load "Schedule Demo Forms," which are hidden by default. */}
+        <ScheduleDemo />
+        {/* Render NavBar at Top of Screen */}
         <NavBar />
 
         {/* Render page view depending on URL */}
