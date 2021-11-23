@@ -1,4 +1,3 @@
-import Fragment from 'react'
 import classes from "./ScheduleDemo.module.css"
 
 interface Props {
