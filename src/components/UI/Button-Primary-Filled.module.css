@@ -1,0 +1,18 @@
+@import url('../../globalStyles.css');
+
+.button {
+    text-transform: uppercase;
+    border: solid var(--primary) 1px;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    transition-duration: 300ms;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 5px rgba(0,0,0, .2);
+}

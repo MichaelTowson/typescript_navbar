@@ -32,7 +32,7 @@ const NavBar: React.FC<Props> = (props) => {
                     {text: "About", url: "/"}
                 ]}/>
                 <NavBarHeader text="Sign In" url="/" children={[]}/>
-                <ScheduleButton text="Schedule Demo" toggleVisible={props.toggleVisible}/>
+                <ScheduleButton text="Schedule Demo" func={props.toggleVisible}/>
             </div>
         </nav>
     )

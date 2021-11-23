@@ -1,8 +1,8 @@
-import classes from './Button-Primary-Wire.module.css'
+import classes from './Button-Primary-Filled.module.css'
 
 interface Props {
     text: string
-    func: () => void
+    func?: () => void
 }
 
 const Button: React.FC<Props> = (props) => {

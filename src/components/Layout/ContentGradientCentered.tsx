@@ -1,6 +1,6 @@
 import classes from "./ContentGradientCentered.module.css"
 
-const ContentGradientCentered: React.FC = () => {
+const ContentGradientCentered: React.FC = (props) => {
   return(
     <div className={classes.container}>
         <h1>Deliver digital experiences that people love.</h1>
