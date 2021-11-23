@@ -1,6 +1,7 @@
 /* VARIABLES */
 :root {
-  --primary: #52c1b2;
+  --primary: rgba(82, 193, 178);
+  --primary_rgba: 82, 193, 178;
 }
 
 /* GLOBAL STYLES */

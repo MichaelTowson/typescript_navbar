@@ -1,25 +1,27 @@
-import { useState } from "react"
-
+import Fragment from 'react'
 import classes from "./ScheduleDemo.module.css"
 
-const ScheduleDemo: React.FC = () => {
+interface Props {
+  scheduleDemoVisibility: boolean
+  toggleVisible: () => void
+}
 
-  //Set initial visibility state of component to be false.
-    const [visible, setVisible] = useState(false);
+const ScheduleDemo: React.FC<Props> = (props) => {
 
-    //Callback function for toggling visibility of component.
-    const toggleVisible = () => {
-      if(visible) {
-        setVisible(false);
-      } else {
-        setVisible(true);
-      }
-    }
+let scheduleDemoVisibile = props.scheduleDemoVisibility
+const toggleVisible: () => void = props.toggleVisible
 
   return (
-    <div>
-      {visible ? <p>Form goes here</p> : ""}
-    </div>
+    <a onClick={toggleVisible}>
+      {scheduleDemoVisibile ?
+        <div className={classes.container}> 
+          <div className={classes.popUp__window}>
+            <p>Form goes here</p> 
+            <button onClick={toggleVisible}>Close Window</button>
+          </div>
+        </div>
+        : ""}
+    </a>
   )
 }
 

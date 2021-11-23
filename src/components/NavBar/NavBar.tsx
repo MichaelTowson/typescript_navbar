@@ -6,7 +6,11 @@ import NavBarHeader from './NavBarHeader'
 import Logo from './NavBarLogo'
 import ScheduleButton from '../UI/Button-Primary-Wire'
 
-const NavBar: React.FC = () => {
+interface Props {
+    toggleVisible: () => void
+}
+
+const NavBar: React.FC<Props> = (props) => {
 
 //Render
     return (
@@ -28,7 +32,7 @@ const NavBar: React.FC = () => {
                     {text: "About", url: "/"}
                 ]}/>
                 <NavBarHeader text="Sign In" url="/" children={[]}/>
-                <ScheduleButton text="Schedule Demo"/>
+                <ScheduleButton text="Schedule Demo" toggleVisible={props.toggleVisible}/>
             </div>
         </nav>
     )
