@@ -11,7 +11,7 @@ let scheduleDemoVisibile = props.scheduleDemoVisibility
 const toggleVisible: () => void = props.toggleVisible
 
   return (
-    <a onClick={toggleVisible}>
+    <button onClick={toggleVisible}>
       {scheduleDemoVisibile ?
         <div className={classes.container}> 
           <div className={classes.popUp__window}>
@@ -21,7 +21,7 @@ const toggleVisible: () => void = props.toggleVisible
           </div>
         </div>
         : ""}
-    </a>
+    </button>
   )
 }
 
